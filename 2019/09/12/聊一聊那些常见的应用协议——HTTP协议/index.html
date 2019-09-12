@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://carr-maker.github.io">
-  <title>Archives | Carr的博客</title>
+  <title>聊一聊那些常见的应用协议——HTTP协议 | Carr的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Carr的博客">
-<meta property="og:url" content="https://carr-maker.github.io/archives/index.html">
+  <meta name="description" content="http协议分析 即超文本传输协议（Hyper Text Transfer Protocol）的英文缩写。 一、几个概念：1、超文本：包含有超链接(Link)和各种多媒体元素标记(Markup)的文本。这些超文本文件彼此链接，形成网状(Web)，因此又被称为网页(Web Page)。这些链接使用URL表示。最常见的超文本格式是超文本标记语言HTML。 2、URL：URL即统一资源定位符(Unifo">
+<meta name="keywords" content="HTTP、应用协议">
+<meta property="og:type" content="article">
+<meta property="og:title" content="聊一聊那些常见的应用协议——HTTP协议">
+<meta property="og:url" content="https://carr-maker.github.io/2019/09/12/聊一聊那些常见的应用协议——HTTP协议/index.html">
 <meta property="og:site_name" content="Carr的博客">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="http协议分析 即超文本传输协议（Hyper Text Transfer Protocol）的英文缩写。 一、几个概念：1、超文本：包含有超链接(Link)和各种多媒体元素标记(Markup)的文本。这些超文本文件彼此链接，形成网状(Web)，因此又被称为网页(Web Page)。这些链接使用URL表示。最常见的超文本格式是超文本标记语言HTML。 2、URL：URL即统一资源定位符(Unifo">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-12T15:37:55.201Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Carr的博客">
-<meta name="twitter:description" content="个人博客">
+<meta name="twitter:title" content="聊一聊那些常见的应用协议——HTTP协议">
+<meta name="twitter:description" content="http协议分析 即超文本传输协议（Hyper Text Transfer Protocol）的英文缩写。 一、几个概念：1、超文本：包含有超链接(Link)和各种多媒体元素标记(Markup)的文本。这些超文本文件彼此链接，形成网状(Web)，因此又被称为网页(Web Page)。这些链接使用URL表示。最常见的超文本格式是超文本标记语言HTML。 2、URL：URL即统一资源定位符(Unifo">
   
     <link rel="alternative" href="/atom.xml" title="Carr的博客" type="application/atom+xml">
   
@@ -149,36 +151,340 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-聊一聊那些常见的应用协议——HTTP协议" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/12/聊一聊那些常见的应用协议——HTTP协议/" class="archive-article-date">
-  	<time datetime="2019-09-12T13:20:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/12/聊一聊那些常见的应用协议——HTTP协议/">聊一聊那些常见的应用协议——HTTP协议</a>
+    <h1 class="article-title" itemprop="name">
+      聊一聊那些常见的应用协议——HTTP协议
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        <a href="/2019/09/12/聊一聊那些常见的应用协议——HTTP协议/" class="archive-article-date">
+  	<time datetime="2019-09-12T13:20:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
+</a>
+        
+
+
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">2.1k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">7分</span>
+      </span>
+    </span>
+</div>
           
+        <!-- 添加完成 -->
+
+
+
+         
+          <span class="archive-article-date">
+              阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="http协议分析"><a href="#http协议分析" class="headerlink" title="http协议分析"></a>http协议分析</h1><hr>
+<p><strong>即超文本传输协议（Hyper Text Transfer Protocol）的英文缩写。</strong></p>
+<h2 id="一、几个概念："><a href="#一、几个概念：" class="headerlink" title="一、几个概念："></a>一、几个概念：</h2><p><strong>1、超文本：</strong>包含有超链接(Link)和各种多媒体元素标记(Markup)的文本。这些超文本文件彼此链接，形成网状(Web)，因此又被称为网页(Web Page)。这些链接使用URL表示。最常见的超文本格式是超文本标记语言HTML。</p>
+<p><strong>2、URL：</strong>URL即统一资源定位符(Uniform Resource Locator)，用来唯一地标识万维网中的某一个文档。URL由协议、主机和端口(默认为80)以及文件名三部分构成。</p>
+<p><strong>3、超文本传输协议：</strong>是一种按照URL指示，将超文本文档从一台主机(Web服务器)传输到另一台主机(浏览器)的应用层协议，以实现超链接的功能，通常运行在TCP之上。</p>
+<a id="more"></a>
+<hr>
+<h2 id="二、HTTP工作原理"><a href="#二、HTTP工作原理" class="headerlink" title="二、HTTP工作原理"></a>二、HTTP工作原理</h2><h3 id="1、请求-响应交互模型"><a href="#1、请求-响应交互模型" class="headerlink" title="1、请求/响应交互模型"></a>1、请求/响应交互模型</h3><p>以用户点击URL为 <a href="http://carr-maker.github.io/index.html">http://carr-maker.github.io/index.html</a> 的链接为例，浏览器和Web服务器执行以下动作：</p>
+<ol>
+<li>浏览器分析超链接中的URL；</li>
+<li>浏览器向DNS请求解析 <a href="http://carr-maker.github.io/index.html">http://carr-maker.github.io/index.html</a> 的IP地址；</li>
+<li>DNS将解析出的IP地址返回给浏览器；</li>
+<li>浏览器与服务器建立TCP链接（80端口）（TCP三次握手）；</li>
+<li>浏览器请求文档：GET/index.html；</li>
+<li>服务器给出响应，将文档index.html发送给浏览器；</li>
+<li>释放TCP连接；</li>
+<li>浏览器解析显示index.html中的内容</li>
+</ol>
+<hr>
+<h3 id="2、HTTP的连接方式和无状态性"><a href="#2、HTTP的连接方式和无状态性" class="headerlink" title="2、HTTP的连接方式和无状态性"></a>2、HTTP的连接方式和无状态性</h3><h4 id="1、非持久性连接"><a href="#1、非持久性连接" class="headerlink" title="1、非持久性连接"></a>1、非持久性连接</h4><p>即浏览器每请求一个Web文档，就创建一个新的连接，当文档传输完毕后，连接就立即被释放。</p>
+<ul>
+<li>HTTP1.0、HTTP0.9采用此连接方式。</li>
+<li>对于请求的Web页中包含多个其它文档对象（如图像、声音、视频等）的连接的情况，由于请求每个链接对应的文档都要创建新的连接，效率低下。</li>
+</ul>
+<h4 id="2、持久性连接"><a href="#2、持久性连接" class="headerlink" title="2、持久性连接"></a>2、持久性连接</h4><p>即在一个连接中，可以进行多次文档的请求和响应。服务器在发送完响应后，并不立即释放连接，浏览器可以使用该链接继续请求其它文档，连接保持的时间可以由双方进行协商。</p>
+<h4 id="3、无状态性"><a href="#3、无状态性" class="headerlink" title="3、无状态性"></a>3、无状态性</h4><p>是指同一个客户端（浏览器）第二次访问同一个Web服务器上的页面时，服务器无法知道这个客户曾经访问过，HTTP的无状态性简化了服务器的设计，使其更容易支持大量并发的HTTP请求。 </p>
+<hr>
+<h2 id="三、http请求方法："><a href="#三、http请求方法：" class="headerlink" title="三、http请求方法："></a>三、http请求方法：</h2><p><strong>请求报文的方法</strong><br>方法（Method）是对所请求对象进行的操作，也是一些命令。请求报文中的操作有：</p>
+<table>
+<thead>
+<tr>
+<th>方法（操作）</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GET</td>
+<td>请求读取一个Web页面</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>附加一个命名资源（如Web页面）</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>删除Web页面</td>
+</tr>
+<tr>
+<td>CONNECT</td>
+<td>用于代理服务器</td>
+</tr>
+<tr>
+<td>HEAD</td>
+<td>请求读取一个Web页面的首部</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>请求存储一个Web页面</td>
+</tr>
+<tr>
+<td>TRACE</td>
+<td>用于测试，要求服务器送回收到的请求</td>
+</tr>
+<tr>
+<td>OPTION</td>
+<td>查询特点选项</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="四、http响应："><a href="#四、http响应：" class="headerlink" title="四、http响应："></a>四、http响应：</h2><p><strong>响应报文中的状态码</strong><br>状态码（Status-Code）是响应报文状态行中包含的一个3位数字，指明特定的请求是否被满足，如果没有满足，原因是什么。状态码分为以下五类：</p>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>含义</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1xx</td>
+<td>通知信息</td>
+<td>100=服务器正在处理客户请求</td>
+</tr>
+<tr>
+<td>2xx</td>
+<td>成功</td>
+<td>200=请求成功（OK）</td>
+</tr>
+<tr>
+<td>3xx</td>
+<td>重定向</td>
+<td>301=页面改变了位置</td>
+</tr>
+<tr>
+<td>4xx</td>
+<td>客户错误</td>
+<td>403=禁止的页面；404=页面未找到</td>
+</tr>
+<tr>
+<td>5xx</td>
+<td>服务器错误</td>
+<td>500=服务器内部错误；503=以后再试</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="五、http头部："><a href="#五、http头部：" class="headerlink" title="五、http头部："></a>五、http头部：</h2><p><strong>首部字段或消息头</strong></p>
+<table>
+<thead>
+<tr>
+<th>头（header）</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User-Agent</td>
+<td>请求</td>
+<td>关于浏览器和它平台的信息，如Mozilla4.</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>请求</td>
+<td>客户能处理的页面类型，如text/html</td>
+</tr>
+<tr>
+<td>Accept-Charset</td>
+<td>请求</td>
+<td>客户可以接受的字符集，如Unicode-1-1</td>
+</tr>
+<tr>
+<td>Accept-Encoding</td>
+<td>请求</td>
+<td>客户能处理的页面编码方法</td>
+</tr>
+<tr>
+<td>Accpet-Language</td>
+<td>请求</td>
+<td>客户能处理的自然语言，如en，zh-cn</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>请求</td>
+<td>服务器的DNS名称。从URL中提取出来，必需。</td>
+</tr>
+<tr>
+<td>Referer</td>
+<td>请求</td>
+<td>用户从该URL代表的页面出发访问当前请求的页面。</td>
+</tr>
+<tr>
+<td>Cookie</td>
+<td>请求</td>
+<td>将以前设置的cookie送回服务器，可用来作为会话信息</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>双向</td>
+<td>消息被发送时的日期和时间</td>
+</tr>
+<tr>
+<td>Server</td>
+<td>响应</td>
+<td>关于服务器的信息，如Microsoft-IIS/6.0</td>
+</tr>
+<tr>
+<td>Content-Encoding</td>
+<td>响应</td>
+<td>内容是如何被编码的</td>
+</tr>
+<tr>
+<td>Content-Language</td>
+<td>响应</td>
+<td>页面所用的自然语言</td>
+</tr>
+<tr>
+<td>Content-Length</td>
+<td>响应</td>
+<td>以字节计算的页面长度</td>
+</tr>
+<tr>
+<td>Content-Type</td>
+<td>响应</td>
+<td>页面的MIME类型</td>
+</tr>
+<tr>
+<td>Last-Modified</td>
+<td>响应</td>
+<td>页面最后被修改的时间和日期，在页面缓存机制中意义重大</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>响应</td>
+<td>指示客户将请求发送给别处，即重定向到另一个URL</td>
+</tr>
+<tr>
+<td>Set-Cookie</td>
+<td>响应</td>
+<td>服务器希望客户保存一个cookie</td>
+</tr>
+</tbody></table>
+<p><strong>具体含义：</strong> </p>
+<ol>
+<li>User-Agent: 浏览器标识 (操作系统标识; 加密等级标识; 浏览器语言) 渲染引擎标识 版本信息</li>
+<li>Server：响应头包含处理请求的原始服务器的软件信息</li>
+<li>Referer：浏览器向 WEB 服务器表明自己是从哪个 网页/URL 获得/点击 当前请求中的网址/URL。</li>
+<li>Location：WEB服务器告诉浏览器，试图访问的对象已经被移到别的位置了，到该头部指定的位置去取。</li>
+<li>Session：Session是可以存储针对于某一个用户的浏览器以及通过其当前窗口打开的任何窗口具有针对性的用户信息存储机制。<br>通常大家认为，只要关闭浏览器，session就消失，其实这是错误的理解。对session来说也是一样的，除非程序通知服务器删除一个session，否则服务器会一直保留。由于关闭浏览器不会导致session被删除，迫使服务器为seesion设置了一个失效时间，当距离客户端上一次使用session的时间超过这个失效时间时，服务器就可以认为客户端已经停止了活动，才会把session删除以节省存储空间.</li>
+<li>Cookie：保存SessionID的方式可以采用Cookie，这样在交互过程中浏览器可以自动的按照规则把这个SessionID发回给服务器。Cookie的命名方式类似于SessionID。有时Cookie被人为的禁止，所以出现了其他机制以便在Cookie被禁止时仍然能够把SessionID传递回服务器。这种技术叫做URL重写，就是把SessionID直接附加在URL路径的后面，附加方式也有两种，一种是作为URL路径的附加信息， 另一种是作为查询字符串附加在URL后面。</li>
+</ol>
+<hr>
+<h2 id="六、未完待续"><a href="#六、未完待续" class="headerlink" title="六、未完待续"></a>六、未完待续</h2><p>由于与HTTP协议相关的知识内容太多，篇幅有限，本条博文仅写到这，其他内容之后再做补充。</p>
+<hr>
+<h1 id="个人感想"><a href="#个人感想" class="headerlink" title="个人感想"></a>个人感想</h1><p>作为一个Web前端的学习者，对HTTP协议的相关知识应有一定的了解，这对于我们的日常学习和产品的开发都具有非常重要的意义。<br>理解HTTP协议的工作原理、请求方法、请求头及状态码，对我们自身的开发和与后台人员的沟通配合都有着非常大的帮助。这不仅可以丰富我们的知识体系，开拓自己的眼界，以一种全局的思想去coding，而且在与后台人员的配合上将会更加的默契，减小前端与后台之间的相互矛盾，加快我们的开发进度。所以，HTTP协议的重要程度不言而喻。<br>由于与HTTP协议相关的知识内容太多，篇幅有限，本条博文仅写到这，其他的内容之后再做补充。除此之外，还会更新DNS协议、ICMP协议、邮件传输协议等常见的应用协议的内容。<br>最后，感想各位的阅读，本文仅是个人的一些浅显的理解与总结，如果文中有错误之处还请多多指出，也欢迎各位在下方留言，一起探讨相关知识。<br>祝好。</p>
+
+      
+
+
+
+
+
+      
+      
+        <div class="declare">
+          <strong>本文作者：</strong>
+          
+            Carr
+          
+          <br>
+          <strong>本文链接：</strong>
+          https://carr-maker.github.io/2019/09/12/聊一聊那些常见的应用协议——HTTP协议/
+          <br>
+          <strong>版权声明：</strong>
+          本作品采用
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+          进行许可。转载请注明出处！
+          
+            <br>
+            <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+          
+        </div>
+      
+
+
+
+
+
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/WeChat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -190,7 +496,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -203,153 +509,137 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://carr-maker.github.io/2019/09/12/聊一聊那些常见的应用协议——HTTP协议/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/10/基于Hexo搭建个人博客的总结-一/" class="archive-article-date">
-  	<time datetime="2019-09-10T09:51:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/10/基于Hexo搭建个人博客的总结-一/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">基于Hexo搭建个人博客的总结 一</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/10/基于Hexo搭建个人博客的总结-一/">基于Hexo搭建个人博客的总结 一</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Hexo、前端，HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Hexo//" class="article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#http协议分析"><span class="toc-number">1.</span> <span class="toc-text">http协议分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、几个概念："><span class="toc-number">1.1.</span> <span class="toc-text">一、几个概念：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、HTTP工作原理"><span class="toc-number">1.2.</span> <span class="toc-text">二、HTTP工作原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、请求-响应交互模型"><span class="toc-number">1.2.1.</span> <span class="toc-text">1、请求/响应交互模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、HTTP的连接方式和无状态性"><span class="toc-number">1.2.2.</span> <span class="toc-text">2、HTTP的连接方式和无状态性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、非持久性连接"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">1、非持久性连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、持久性连接"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">2、持久性连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、无状态性"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">3、无状态性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、http请求方法："><span class="toc-number">1.3.</span> <span class="toc-text">三、http请求方法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、http响应："><span class="toc-number">1.4.</span> <span class="toc-text">四、http响应：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、http头部："><span class="toc-number">1.5.</span> <span class="toc-text">五、http头部：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、未完待续"><span class="toc-number">1.6.</span> <span class="toc-text">六、未完待续</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#个人感想"><span class="toc-number">2.</span> <span class="toc-text">个人感想</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/10/测试2/" class="archive-article-date">
-  	<time datetime="2019-09-10T07:42:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/10/测试2/">测试2</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/测试//" class="article-tag-list-link color3">测试</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/10/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-09-10T04:21:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/10/我的第一篇博客文章/">我的第一篇博客文章</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
+  
+      <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: '89460cb59e9c3c578d3e',
+  clientSecret: '3f580b7f966022705053afa9b12c0aad1edf8281',
+  repo: 'carr-maker.github.io',
+  owner: 'Carr-maker',
+  admin: ['Carr-maker'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+  
 
 
           </div>
@@ -409,8 +699,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
